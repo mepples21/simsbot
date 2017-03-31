@@ -24,7 +24,9 @@ var mattPhrases = [
   "I need to check with my wife.",
   "I love Dave Matthews Band!",
   "I know.",
-  "I don’t anything, I’m just some dude."
+  "I don’t anything, I’m just some dude.",
+  "Approved",
+  "Coo"
 ]
 
 bot.dialog('/', function (session) {
