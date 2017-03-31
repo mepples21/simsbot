@@ -21,7 +21,8 @@ var arrOfMagicSayings = [
   "You rock!",
   "noice",
   "gents...",
-  "I need to check with my wife."
+  "I need to check with my wife.",
+  "I love Dave Matthews Band!"
 ]
 
 var randomIndex = Math.round(Math.random() * arrOfMagicSayings.length);
