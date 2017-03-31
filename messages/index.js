@@ -28,7 +28,7 @@ var mattPhrases = [
 var randomIndex = mattPhrases[Math.floor(Math.random()*mattPhrases.length)];
 
 bot.dialog('/', function (session) {
-    session.send(mattPhrases[randomIndex]);
+    session.send(randomIndex);
 });
 
 if (useEmulator) {
