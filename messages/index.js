@@ -25,12 +25,10 @@ var mattPhrases = [
   "I love Dave Matthews Band!"
 ]
 
-var item = mattPhrases.sort(function() {return 0.5 - Math.random()})[0];
-
 var randomIndex = Math.floor(Math.random() * mattPhrases.length);
 
 bot.dialog('/', function (session) {
-    session.send(item[0]);
+    session.send(mattPhrases[randomIndex]);
 });
 
 if (useEmulator) {
