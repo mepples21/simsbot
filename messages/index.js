@@ -26,7 +26,11 @@ var mattPhrases = [
   "I know.",
   "I don’t anything, I’m just some dude.",
   "Approved",
-  "Coo"
+  "Coo",
+  "Yo dude",
+  "Hey bud.",
+  "Hey bud!",
+  "Sweet thanks!"
 ]
 
 bot.dialog('/', function (session) {
