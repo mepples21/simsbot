@@ -25,15 +25,15 @@ var mattPhrases = [
   "I love Dave Matthews Band!"
 ]
 
-var randomIndex = {Phrase: mattPhrases[Math.floor(Math.random()*mattPhrases.length)]};
+randomIndex = mattPhrases[Math.floor(Math.random()*mattPhrases.length)];
 
 bot.dialog('/', function (session) {
-    session.send(randomIndex.Phrase);
+    session.send(randomIndex);
 });
 
 // delete mattPhrases;
 // delete randomIndex;
-delete randomIndex.Phrase;
+randomIndex = (function(){}());
 
 if (useEmulator) {
     var restify = require('restify');
