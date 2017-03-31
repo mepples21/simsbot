@@ -28,12 +28,8 @@ var mattPhrases = [
 var randomIndex = mattPhrases[Math.floor(Math.random()*mattPhrases.length)];
 
 bot.dialog('/', function (session) {
-    session.send(randomIndex);
+    session.send(mattPhrases[Math.floor(Math.random()*mattPhrases.length)]);
 });
-
-// delete mattPhrases;
-// delete randomIndex;
-randomIndex = (function(){}());
 
 if (useEmulator) {
     var restify = require('restify');
