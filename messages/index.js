@@ -25,13 +25,12 @@ var mattPhrases = [
   "I love Dave Matthews Band!"
 ]
 
-// use underscore's shuffle function
-var firstRandomElement = _.shuffle(mattPhrases)[0];
+var item = mattPhrases.sort(function() {return 0.5 - Math.random()})[0];
 
 var randomIndex = Math.floor(Math.random() * mattPhrases.length);
 
 bot.dialog('/', function (session) {
-    session.send(firstRandomElement);
+    session.send(item[0]);
 });
 
 if (useEmulator) {
