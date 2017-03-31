@@ -22,7 +22,9 @@ var mattPhrases = [
   "noice",
   "gents...",
   "I need to check with my wife.",
-  "I love Dave Matthews Band!"
+  "I love Dave Matthews Band!",
+  "I know.",
+  "I don’t anything, I’m just some dude."
 ]
 
 bot.dialog('/', function (session) {
