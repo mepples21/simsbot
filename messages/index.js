@@ -36,8 +36,10 @@ var arrOfMagicSayings = [
   "Don't count on it."
 ]
 
+var randomIndex = Math.round(Math.random() * arrOfMagicSayings.length);
+
 bot.dialog('/', function (session) {
-    session.send(arrOfMagicSayings);
+    session.send(arrOfMagicSayings[randomIndex]);
 });
 
 if (useEmulator) {
