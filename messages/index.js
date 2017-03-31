@@ -25,10 +25,24 @@ var mattPhrases = [
   "I love Dave Matthews Band!"
 ]
 
+(function($) {
+    $.rand = function(arg) {
+        if ($.isArray(arg)) {
+            return arg[$.rand(arg.length)];
+        } else if (typeof arg === "number") {
+            return Math.floor(Math.random() * arg);
+        } else {
+            return 4;  // chosen by fair dice roll
+        }
+    };
+})(jQuery);
+
+var random = jQuery.rand(mattPhrases);
+
 var randomIndex = Math.floor(Math.random() * mattPhrases.length);
 
 bot.dialog('/', function (session) {
-    session.send(mattPhrases[randomIndex]);
+    session.send(random);
 });
 
 if (useEmulator) {
