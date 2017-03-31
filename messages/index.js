@@ -13,7 +13,7 @@ var connector = useEmulator ? new builder.ChatConnector() : new botbuilder_azure
 
 var bot = new builder.UniversalBot(connector);
 
-var arrOfMagicSayings = [
+var mattPhrases = [
   "Sweet!",
   "Muthaf***a",
   "Wanna listen to some Phish?",
@@ -25,10 +25,10 @@ var arrOfMagicSayings = [
   "I love Dave Matthews Band!"
 ]
 
-var randomIndex = Math.round(Math.random() * arrOfMagicSayings.length);
+var random = mattPhrases[Math.floor(Math.random()*mattPhrases.length)];
 
 bot.dialog('/', function (session) {
-    session.send(arrOfMagicSayings[randomIndex]);
+    session.send(random);
 });
 
 if (useEmulator) {
