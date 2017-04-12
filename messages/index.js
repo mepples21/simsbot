@@ -23,7 +23,7 @@ var mattPhrases = [
   "gents...",
   "I need to check with my wife.",
   "I love Dave Matthews Band!",
-  "I don’t anything, I’m just some dude.",
+  "I don’t know anything, I’m just some dude.",
   "Approved",
   "Coo",
   "Yo dude",
