@@ -35,7 +35,8 @@ var mattPhrases = [
   "Thx dude.",
   "Thx man.",
   "Sup suckas?",
-  "Solid."
+  "Solid.",
+  "Sire!"
 ]
 
 bot.dialog('/', function (session) {
